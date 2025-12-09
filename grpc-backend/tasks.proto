@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package tms;
+
+service TaskService {
+  rpc ListTasks (ListTasksRequest) returns (ListTasksResponse);
+  rpc GetTask (GetTaskRequest) returns (GetTaskResponse);
+  rpc CreateTask (CreateTaskRequest) returns (CreateTaskResponse);
+  rpc UpdateTask (UpdateTaskRequest) returns (UpdateTaskResponse);
+  rpc DeleteTask (DeleteTaskRequest) returns (DeleteTaskResponse);
+}
+
+enum TaskStatus {
+  TASK_STATUS_UNSPECIFIED = 0;
+  Open = 1;
+  ToDo = 2;
+  Doing = 3;
+  Done = 4;
+  Closed = 5;
+}
+
+message Task {
+  string id = 1;
+  string title = 2;
+  string description = 3;
+  TaskStatus status = 4;
+  string created_at = 5;
+  string updated_at = 6;
+}
+
+message ListTasksRequest {}
+message ListTasksResponse { repeated Task tasks = 1; }
+
+message GetTaskRequest { string id = 1; }
+message GetTaskResponse { Task task = 1; }
+
+message CreateTaskRequest {
+  string title = 1;
+  string description = 2;
+  TaskStatus status = 3;
+}
+message CreateTaskResponse { Task task = 1; }
+
+message UpdateTaskRequest {
+  string id = 1;
+  string title = 2;
+  string description = 3;
+  TaskStatus status = 4;
+}
+message UpdateTaskResponse { Task task = 1; }
+
+message DeleteTaskRequest { string id = 1; }
+message DeleteTaskResponse { bool ok = 1; }

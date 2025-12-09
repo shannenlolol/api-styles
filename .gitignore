@@ -1,0 +1,29 @@
+# Node
+graphql-backend/node_modules/
+graphql-frontend/node_modules/
+grpc-backend/__pycache__/
+rest-backend/node_modules/
+rest-frontend/node_modules/
+
+dist/
+.vite/
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
