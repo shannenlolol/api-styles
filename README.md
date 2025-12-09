@@ -15,6 +15,13 @@ You can replace the stores with MySQL later.
 
 ---
 
+## **Tests on Postman**
+[REST API](https://www.postman.com/tms444-5343/workspace/api-styles/collection/14701527-4373fe73-0370-40a9-a951-3c25e45094a5?action=share&creator=14701527&active-environment=14701527-6d97569b-993c-4a69-a93f-42e1f433aab9)
+
+[GraphQL](https://www.postman.com/tms444-5343/workspace/api-styles/collection/693689f70b921e2ce68028eb?action=share&creator=14701527&active-environment=14701527-6d97569b-993c-4a69-a93f-42e1f433aab9)
+
+[gRPC](https://www.postman.com/tms444-5343/workspace/api-styles/collection/6936934f0b921e2ce680292f?action=share&creator=14701527&active-environment=14701527-6d97569b-993c-4a69-a93f-42e1f433aab9)
+
 ## Prerequisites
 
 - Node.js 18+ (20+ recommended)
